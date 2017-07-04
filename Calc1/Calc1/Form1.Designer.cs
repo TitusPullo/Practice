@@ -37,6 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +66,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "addition";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.buttonClick);
+            this.button1.Click += new System.EventHandler(this.buttonClickTwoArg);
             // 
             // button2
             // 
@@ -74,7 +76,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "subtraction";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.buttonClick);
+            this.button2.Click += new System.EventHandler(this.buttonClickTwoArg);
             // 
             // button3
             // 
@@ -84,7 +86,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "multiplication";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.buttonClick);
+            this.button3.Click += new System.EventHandler(this.buttonClickTwoArg);
             // 
             // button4
             // 
@@ -94,7 +96,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "division";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.buttonClick);
+            this.button4.Click += new System.EventHandler(this.buttonClickTwoArg);
             // 
             // label2
             // 
@@ -121,12 +123,34 @@
             this.textBox3.Size = new System.Drawing.Size(638, 22);
             this.textBox3.TabIndex = 8;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(55, 188);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(227, 23);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "power";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.buttonClickOneArg);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(378, 187);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(227, 23);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "sqrt";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.buttonClickOneArg);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.YellowGreen;
-            this.ClientSize = new System.Drawing.Size(670, 207);
+            this.ClientSize = new System.Drawing.Size(670, 333);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
@@ -156,6 +180,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 

@@ -17,22 +17,33 @@ namespace Calc1
             InitializeComponent();
         }
 
-        private void buttonClick(object sender, EventArgs e)
+        private void buttonClickTwoArg(object sender, EventArgs e)
         {
             double first = Convert.ToDouble(textBox1.Text);
             double second = Convert.ToDouble(textBox2.Text);
-           
-            
-            ICalculator calculator = CalculatesFactory.CreateCalculator(((Button)sender).Name);
+
+
+            ICalculator calculator = CalculatesFactory.CreateCalculator(((Button) sender).Name);
             double result = calculator.Calculate(first, second);
 
             textBox3.Text = result.ToString();
         }
 
-        
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonClickOneArg(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(textBox1.Text);
+
+
+            I2Calculator calculator = CalculatesFactoryTwo.CreateCalculator(((Button) sender).Name);
+            double result = calculator.Calculate(first);
+
+            textBox3.Text = result.ToString();
         }
     }
 }
