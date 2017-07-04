@@ -21,7 +21,7 @@ namespace Calc1
         {
             double first = Convert.ToDouble(textBox1.Text);
             double second = Convert.ToDouble(textBox2.Text);
-            double result = first - second;
+            double result = Convert.ToDouble(textBox3.Text);
             switch (((Button)sender).Name)
             {
                 case "button1":
