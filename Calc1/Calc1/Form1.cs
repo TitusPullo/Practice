@@ -17,52 +17,40 @@ namespace Calc1
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonClick(object sender, EventArgs e)
         {
             double first = Convert.ToDouble(textBox1.Text);
             double second = Convert.ToDouble(textBox2.Text);
             double result = first - second;
+            switch (((Button)sender).Name)
+            {
+                case "button1":
+                    result = first + second;
+                    //выполнение операции
+                    break;
+                case "button2":
+                    result = first - second;
+                    //выполнение операции
+                    break;
+                case "button3":
+                    result = first * second;
+                    //выполнение операции
+                    break;
+                case "button4":
+                    result = first / second;
+                    //выполнение операции
+                    break;
+                default:
+                    throw new Exception("");
+            }
 
             textBox3.Text = result.ToString();
         }
 
+        
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            double first = Convert.ToDouble(textBox1.Text);
-            double second = Convert.ToDouble(textBox2.Text);
-            double result =  first + second;
-           
-            textBox3.Text = result.ToString();
-
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            double first = Convert.ToDouble(textBox1.Text);
-            double second = Convert.ToDouble(textBox2.Text);
-            double result = first * second;
-
-            textBox3.Text = result.ToString();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            double first = Convert.ToDouble(textBox1.Text);
-            double second = Convert.ToDouble(textBox2.Text);
-            double result = first / second;
-
-            textBox3.Text = result.ToString();
         }
     }
 }
