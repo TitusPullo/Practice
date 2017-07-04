@@ -1,29 +1,31 @@
-﻿namespace Calc1
+﻿using System;
+
+namespace Calc1
 {
     public static class CalculatesFactory
     {
         static ICalculate createCalculator(string calcName)
         {
-            ICalculate calculate;
+           
             switch (calcName)
             {
                 case "button1":
-                    calculate = new Addition();
-                    break;
+                    return new Addition();
+                    
                 case "button2":
-                    calculate = new Substraction();
-                    break;
+                    return new Substraction();
+                    
                 case "button3":
-                    calculate = new Multiplication();
-                    break;
+                    return new Multiplication();
+                    
                 case "button4":
-                    calculate = new Division();
-                    break;
+                    return new Division();
+                    
                 default:
-                    calculate = null;
-                    break;
+                    throw new Exception("");
+               
             }
-            return calculate;
+           
         }
     }
 }
