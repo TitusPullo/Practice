@@ -4,7 +4,7 @@ namespace Calc1
 {
     public static class CalculatesFactory
     {
-        static ICalculate createCalculator(string calcName)
+        public static ICalculator CreateCalculator(string calcName)
         {
            
             switch (calcName)

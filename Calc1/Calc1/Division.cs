@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calc1
 {
-    class Division
+    class Division: ICalculator
     {
+        public double Calculate(double first, double second)
+        {
+            return first / second;
+        }
     }
 }

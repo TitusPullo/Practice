@@ -21,28 +21,10 @@ namespace Calc1
         {
             double first = Convert.ToDouble(textBox1.Text);
             double second = Convert.ToDouble(textBox2.Text);
-            double result = Convert.ToDouble(textBox3.Text);
-            switch (((Button)sender).Name)
-            {
-                case "button1":
-                    result = first + second;
-                    //выполнение операции
-                    break;
-                case "button2":
-                    result = first - second;
-                    //выполнение операции
-                    break;
-                case "button3":
-                    result = first * second;
-                    //выполнение операции
-                    break;
-                case "button4":
-                    result = first / second;
-                    //выполнение операции
-                    break;
-                default:
-                    throw new Exception("");
-            }
+           
+            
+            ICalculator calculator = CalculatesFactory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.Calculate(first, second);
 
             textBox3.Text = result.ToString();
         }
