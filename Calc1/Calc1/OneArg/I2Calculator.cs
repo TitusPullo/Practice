@@ -1,4 +1,4 @@
-﻿namespace Calc1
+﻿namespace Calc1.OneArg
 {
     public interface I2Calculator
     {

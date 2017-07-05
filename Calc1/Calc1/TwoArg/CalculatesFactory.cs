@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calc1
+namespace Calc1.TwoArg
 {
     public static class CalculatesFactory
     {

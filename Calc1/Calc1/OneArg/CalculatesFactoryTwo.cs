@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calc1
+namespace Calc1.OneArg
 {
     public static class CalculatesFactoryTwo
     {
@@ -14,6 +14,10 @@ namespace Calc1
 
                 case "button6":
                     return new Sqrt();
+                case "button7":
+                    return new Sin();
+                case "button8":
+                    return new Cos();
 
                 default:
                     throw new Exception("");

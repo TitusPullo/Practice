@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.ExceptionServices;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Calc1
+﻿namespace Calc1.TwoArg
 {
     public class Addition: ICalculator
     {

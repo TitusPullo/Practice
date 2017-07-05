@@ -51,14 +51,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="OneArg\CalculatesFactory.cs" />
+    <Compile Include="OneArg\Cos.cs" />
+    <Compile Include="TwoArg\CalculatesFactory.cs" />
     <Compile Include="OneArg\I2Calculator.cs" />
     <Compile Include="OneArg\Power.cs" />
+    <Compile Include="OneArg\Sin.cs" />
     <Compile Include="OneArg\Sqrt.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArg\addition.cs" />
-    <Compile Include="TwoArg\CalculatesFactoryTwo.cs" />
+    <Compile Include="OneArg\CalculatesFactoryTwo.cs" />
     <Compile Include="TwoArg\Division.cs" />
     <Compile Include="TwoArg\ICalculate.cs" />
     <Compile Include="TwoArg\Multiplication.cs" />

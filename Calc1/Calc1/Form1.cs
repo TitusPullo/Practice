@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Calc1.OneArg;
+using Calc1.TwoArg;
 
 namespace Calc1
 {

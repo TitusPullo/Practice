@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calc1
+namespace Calc1.OneArg
 {
     public class Power : I2Calculator 
     {
