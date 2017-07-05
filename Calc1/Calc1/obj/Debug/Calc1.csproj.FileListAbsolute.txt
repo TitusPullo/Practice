@@ -1,9 +1,0 @@
-C:\Users\Rusla\Documents\GitHub\Practice\Calc1\Calc1\bin\Debug\Calc1.exe.config
-C:\Users\Rusla\Documents\GitHub\Practice\Calc1\Calc1\bin\Debug\Calc1.exe
-C:\Users\Rusla\Documents\GitHub\Practice\Calc1\Calc1\bin\Debug\Calc1.pdb
-C:\Users\Rusla\Documents\GitHub\Practice\Calc1\Calc1\obj\Debug\Calc1.csprojResolveAssemblyReference.cache
-C:\Users\Rusla\Documents\GitHub\Practice\Calc1\Calc1\obj\Debug\Calc1.Form1.resources
-C:\Users\Rusla\Documents\GitHub\Practice\Calc1\Calc1\obj\Debug\Calc1.Properties.Resources.resources
-C:\Users\Rusla\Documents\GitHub\Practice\Calc1\Calc1\obj\Debug\Calc1.csproj.GenerateResource.Cache
-C:\Users\Rusla\Documents\GitHub\Practice\Calc1\Calc1\obj\Debug\Calc1.exe
-C:\Users\Rusla\Documents\GitHub\Practice\Calc1\Calc1\obj\Debug\Calc1.pdb
