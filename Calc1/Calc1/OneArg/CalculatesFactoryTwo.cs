@@ -9,14 +9,14 @@ namespace Calc1.OneArg
 
             switch (calcName)
             {
-                case "button5":
+                case "power":
                     return new Power();
 
-                case "button6":
+                case "sqrt":
                     return new Sqrt();
-                case "button7":
+                case "sin":
                     return new Sin();
-                case "button8":
+                case "cos":
                     return new Cos();
 
                 default:

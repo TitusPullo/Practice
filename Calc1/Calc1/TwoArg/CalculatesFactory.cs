@@ -9,16 +9,16 @@ namespace Calc1.TwoArg
            
             switch (calcName)
             {
-                case "button1":
+                case "addition":
                     return new Addition();
                     
-                case "button2":
+                case "substraction":
                     return new Substraction();
                     
-                case "button3":
+                case "multiplication":
                     return new Multiplication();
                     
-                case "button4":
+                case "division":
                     return new Division();
                     
                 default:

@@ -7,7 +7,11 @@ namespace Calc1.OneArg
     {
     public double Calculate(double first)
     {
-        return Math.Sqrt(first);
+        if (first < 0)
+        {
+            throw new Exception("arguments < 0");
+        }
+            return Math.Sqrt(first);
     }
     }
 }
