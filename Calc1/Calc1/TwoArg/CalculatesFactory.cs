@@ -7,6 +7,11 @@ namespace Calc1.TwoArg
     /// </summary>
     public static class CalculatesFactory
     {
+        /// <summary>
+        /// interface
+        /// </summary>
+        /// <param name="calcName">calcName</param>
+        /// <returns>another function or metod </returns>
         public static ICalculator CreateCalculator(string calcName)
         {
            

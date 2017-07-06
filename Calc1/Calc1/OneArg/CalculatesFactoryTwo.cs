@@ -10,8 +10,8 @@ namespace Calc1.OneArg
         /// <summary>
         /// public static metod buttonClick
         /// </summary>
-        /// <param name="calcName"></param>
-        /// <returns></returns>
+        /// <param name="calcName">choose param</param>
+        /// <returns>calculator</returns>
         public static I2Calculator CreateCalculator(string calcName)
         {
             switch (calcName)

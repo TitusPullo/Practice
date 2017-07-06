@@ -8,6 +8,11 @@ namespace Calc1.OneArg
     public class Sqrt: I2Calculator
 
     {
+        /// <summary>
+        /// calculate
+        /// </summary>
+        /// <param name="first">first</param>
+        /// <returns>sqrt</returns>
     public double Calculate(double first)
     {
         if (first < 0)

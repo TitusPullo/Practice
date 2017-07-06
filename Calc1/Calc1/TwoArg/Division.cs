@@ -7,6 +7,12 @@ namespace Calc1.TwoArg
     /// </summary>
     public class Division: ICalculator
     {
+        /// <summary>
+        /// calculate
+        /// </summary>
+        /// <param name="first">first</param>
+        /// <param name="second">second</param>
+        /// <returns>first/second</returns>
         public double Calculate(double first, double second)
         {
             if (first == 0 && second == 0)
