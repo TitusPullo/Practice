@@ -9,6 +9,8 @@ namespace Calc1.Tests.OneArg
 
     {
         [TestCase(5, 25)]
+        [TestCase(6, 36)]
+        [TestCase(7, 49)]
 
         public void SqrtTest(double expected, double real)
         {

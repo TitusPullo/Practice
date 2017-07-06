@@ -9,6 +9,8 @@ namespace Calc1.Tests.TwoArg
     public class AdditionTests
     {
         [TestCase(5, 45,50)]
+        [TestCase(5, 40, 45)]
+        [TestCase(5, 65, 70)]
 
         public void AdditionTest(double firstArgument, double secondArgument, double expected)
         {

@@ -2,6 +2,9 @@
 
 namespace Calc1.OneArg
 {
+    /// <summary>
+    /// sin metod
+    /// </summary>
     public class Sin : I2Calculator
 
     {

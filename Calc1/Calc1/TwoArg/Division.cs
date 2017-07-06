@@ -2,6 +2,9 @@
 
 namespace Calc1.TwoArg
 {
+    /// <summary>
+    /// division metod and zero test 
+    /// </summary>
     public class Division: ICalculator
     {
         public double Calculate(double first, double second)

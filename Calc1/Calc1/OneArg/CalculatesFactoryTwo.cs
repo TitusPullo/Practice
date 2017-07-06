@@ -2,16 +2,22 @@
 
 namespace Calc1.OneArg
 {
+    /// <summary>
+    /// static  one argument operation 
+    /// </summary>
     public static class CalculatesFactoryTwo
     {
+        /// <summary>
+        /// public static metod buttonClick
+        /// </summary>
+        /// <param name="calcName"></param>
+        /// <returns></returns>
         public static I2Calculator CreateCalculator(string calcName)
         {
-
             switch (calcName)
             {
                 case "power":
                     return new Power();
-
                 case "sqrt":
                     return new Sqrt();
                 case "sin":
@@ -21,9 +27,7 @@ namespace Calc1.OneArg
 
                 default:
                     throw new Exception("");
-
             }
-
         }
     }
 }

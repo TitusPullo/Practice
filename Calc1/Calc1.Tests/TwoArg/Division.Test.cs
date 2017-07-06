@@ -9,6 +9,9 @@ namespace Calc1.Tests.TwoArg
     public class DivisionTests
     {
         [TestCase(40, 5, 8)]
+        [TestCase(40, 4, 10)]
+        [TestCase(40, 10, 4)]
+
 
         public void DivisionTest(double firstArgument, double secondArgument, double expected)
         {

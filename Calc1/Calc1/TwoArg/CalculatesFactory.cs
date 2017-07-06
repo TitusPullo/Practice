@@ -2,6 +2,9 @@
 
 namespace Calc1.TwoArg
 {
+    /// <summary>
+    /// factory of two arguments
+    /// </summary>
     public static class CalculatesFactory
     {
         public static ICalculator CreateCalculator(string calcName)

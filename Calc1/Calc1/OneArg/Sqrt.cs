@@ -2,6 +2,9 @@
 
 namespace Calc1.OneArg
 {
+    /// <summary>
+    /// sqrt metod
+    /// </summary>
     public class Sqrt: I2Calculator
 
     {

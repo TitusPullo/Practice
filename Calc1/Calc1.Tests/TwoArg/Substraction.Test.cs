@@ -9,6 +9,8 @@ namespace Calc1.Tests.TwoArg
     public class SubstractionTests
     {
         [TestCase(5, 45, -40)]
+        [TestCase(5, 50, -45)]
+        [TestCase(5, 60, -55)]
 
         public void SubstractionTest(double firstArgument, double secondArgument, double expected)
         {

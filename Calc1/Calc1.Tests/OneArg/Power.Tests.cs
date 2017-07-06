@@ -8,6 +8,9 @@ namespace Calc1.Tests.OneArg
     public class PowerTests
     {
         [TestCase(100, 2)]
+        [TestCase(1000, 3)]
+        [TestCase(10000, 4)]
+
 
         public void PowerTest(double expected, double real)
         {
