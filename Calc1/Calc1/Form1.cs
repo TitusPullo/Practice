@@ -21,14 +21,20 @@ namespace Calc1
 
         private void buttonClickTwoArg(object sender, EventArgs e)
         {
-            double first = Convert.ToDouble(textBox1.Text);
-            double second = Convert.ToDouble(textBox2.Text);
+            try
+            {
+                double first = Convert.ToDouble(textBox1.Text);
+                double second = Convert.ToDouble(textBox2.Text);
 
+                ICalculator calculator = CalculatesFactory.CreateCalculator(((Button) sender).Name);
+                double result = calculator.Calculate(first, second);
 
-            ICalculator calculator = CalculatesFactory.CreateCalculator(((Button) sender).Name);
-            double result = calculator.Calculate(first, second);
-
-            textBox3.Text = result.ToString();
+                textBox3.Text = result.ToString();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Error");
+            }
         }
 
 
@@ -39,13 +45,19 @@ namespace Calc1
 
         private void buttonClickOneArg(object sender, EventArgs e)
         {
-            double first = Convert.ToDouble(textBox1.Text);
+            try
+            {
+                double first = Convert.ToDouble(textBox1.Text);
 
+                I2Calculator calculator = CalculatesFactoryTwo.CreateCalculator(((Button) sender).Name);
+                double result = calculator.Calculate(first);
 
-            I2Calculator calculator = CalculatesFactoryTwo.CreateCalculator(((Button) sender).Name);
-            double result = calculator.Calculate(first);
-
-            textBox3.Text = result.ToString();
+                textBox3.Text = result.ToString();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Error");
+            }
         }
     }
 }
