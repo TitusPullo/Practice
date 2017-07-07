@@ -15,7 +15,7 @@ namespace Calc1.TwoArg
         /// <returns>first/second</returns>
         public double Calculate(double first, double second)
         {
-            if (first == 0 && second == 0)
+            if (first == 0 || second == 0)
             {
                 throw new Exception("arguments = 0");
             }
